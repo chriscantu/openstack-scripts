@@ -35,7 +35,7 @@ Q.fcall( function() {
 
 				(err) ? defer.reject(err) : console.log(srv.status)
 
-				if(srv.status == "RUNNING" || count >= 3) {
+				if(srv.status == "RUNNING" || count >= 20) {
 					clearInterval(intervalId);
 					defer.resolve({status:"Finished!"})
 				}
