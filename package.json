@@ -4,7 +4,7 @@
   "version":     "0.0.1",
   "author":      "Chris Cantu <christopher.cantu@gmail.com>",
   "contributors": [
-    { "name": "Chris Cantu",        "email": "christopher.cantu@gmail.com" },
+    { "name": "Chris Cantu",        "email": "christopher.cantu@gmail.com" }
   ],
   "repository": {
     "type": "git",
