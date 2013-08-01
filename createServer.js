@@ -14,15 +14,15 @@ var options = {
 }
 
 Q.fcall( function() {
-	var defer = Q.defer()
+	var defer = Q.defer();
 
-	client.createServer(options, function (server, err) {
+	client.createServer(options, function (err, server) {
 		return (err) ? defer.reject(err) : defer.resolve(server);
 	});
 
 	return defer.promise;
 }).then( function (server) {
-	var defer = Q.defer(), count=0, inProgress = false;	
+	var defer = Q.defer(), count = 0, inProgress = false;
 
 	var intervalId = setInterval( function() {
 
