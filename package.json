@@ -1,0 +1,27 @@
+{
+  "name":        "encore-build-scripts",
+  "description": "Simple scripts which can be leveraged in the Encore CICD process",
+  "version":     "0.0.1",
+  "author":      "Encore UI <encore@rackpace.com>",
+  "contributors": [
+    { "name": "Chris Cantu",        "email": "chris.cantu@rackspace.com" },
+    { "name": "Ernie Hsiung",       "email": "ernie.hsiung@rackpace" }
+  ],
+  "repository": {
+    "type": "git",
+    "url" : "http://github.com/rackerlabs/encore-build-scripts"
+  },
+  "keywords": [
+    "cloud", "cloud computing",
+    "api", "rackspace"
+  ],
+  "dependencies": {
+    "pkgcloud":      "0.8.x",
+    "q":             "0.9.x"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+  },
+  "engines": { "node": "0.8.x || 0.10.x" }
+}
