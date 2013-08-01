@@ -1,15 +1,14 @@
 {
-  "name":        "encore-build-scripts",
-  "description": "Simple scripts which can be leveraged in the Encore CICD process",
+  "name":        "openstack-scripts",
+  "description": "Simple scripts which can be leveraged for integrating with Rackspace Cloud and a CICD process",
   "version":     "0.0.1",
-  "author":      "Encore UI <encore@rackpace.com>",
+  "author":      "Chris Cantu <christopher.cantu@gmail.com>",
   "contributors": [
-    { "name": "Chris Cantu",        "email": "chris.cantu@rackspace.com" },
-    { "name": "Ernie Hsiung",       "email": "ernie.hsiung@rackpace" }
+    { "name": "Chris Cantu",        "email": "christopher.cantu@gmail.com" },
   ],
   "repository": {
     "type": "git",
-    "url" : "http://github.com/rackerlabs/encore-build-scripts"
+    "url" : "http://github.com/christophercantu/openstack-scripts"
   },
   "keywords": [
     "cloud", "cloud computing",
