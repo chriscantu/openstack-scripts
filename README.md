@@ -20,7 +20,12 @@ In order to leverage these scripts, you must have the following:
 
 ### createServer.js
 
-The script will create a server provided a valid server name.  The script will continue to run until the server's status has changed to `RUNNING` or 10 minutes has passed.
+Creates a server provided a valid server name.  The script will continue to run until the server's status has changed to `RUNNING` or 10 minutes has passed.
 
 `node createServer.js (server_name)`
 
+### destroyServer.js
+
+Destroys a server provided a valid server id.  The script will NOT wait for the VM to be completely destroyed.
+
+`node destroyServer.js (server_id)`
