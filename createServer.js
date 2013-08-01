@@ -35,9 +35,11 @@ Q.fcall( function() {
 
 				(err) ? defer.reject(err) : console.log(srv.status)
 
-				if(srv.status == "RUNNING" || count >= 20) {
+				if(srv.status == "RUNNING") {
 					clearInterval(intervalId);
 					defer.resolve({status:"Finished!"})
+				} else if (count >= 20) {
+					defer.reject({status:"Timed Out"});
 				}
 			});
 		}
