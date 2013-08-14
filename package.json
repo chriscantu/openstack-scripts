@@ -16,7 +16,8 @@
   ],
   "dependencies": {
     "pkgcloud":      "0.8.x",
-    "q":             "0.9.x"
+    "q":             "0.9.x",
+    "restler":       "2.0.1"
   },
   "devDependencies": {
   },
