@@ -7,11 +7,16 @@ var FOUR_GB_FLAVOR_ID = 5, UBUNTU_1204_IMAGE_ID = '23b564c9-c3e6-49f9-bc68-86c7a
 
 var serverName = process.argv[2]
 
-var options = { 
+if (!serverName) {
+	console.log("You must pass a server name to the script. Example: 'node createServer.js mySpecialServer'");
+	process.exit(1);
+}
+
+var options = {
 	name: serverName,
 	image: UBUNTU_1204_IMAGE_ID,
 	flavor: FOUR_GB_FLAVOR_ID
-}
+};
 
 Q.fcall( function() {
 	var defer = Q.defer();
@@ -60,5 +65,5 @@ Q.fcall( function() {
 	return defer.promise
 }).then(function (file) {
 	console.log("Wrote data to: " + file);
-	conosole.log("Success!")
+	console.log("Success!");
 }).done();
